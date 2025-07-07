@@ -9,7 +9,7 @@ connectDB();
 const app = express();
 app.use(cors())
 
-app.use(bodyParser.json());
+app.use(express.json());
 app.use('/api',studentRouter);
 
 const PORT = process.env.PORT ||5000;

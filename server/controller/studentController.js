@@ -84,10 +84,10 @@ exports.studentUpdate=async(req,res)=>{
   }
 }
 //remove student
-exports.deleteStudentByID=async(res,req)=>{
+exports.deleteStudentByID=async(req,res)=>{
   console.log("Delete user by id...");
   try {
-    const {id}=req.params;
+    const {id} = req.params;
     const student=await Student.findByIdAndDelete(id);
     if(!student){
       return res.status(400).json({
@@ -95,7 +95,7 @@ exports.deleteStudentByID=async(res,req)=>{
       });
     }
     res.status(200).json({
-      message:'Student delete successfully'
+      message:'Student deleted successfully'
     })
   } catch (error) {
     console.error(`Error: ${error.message}`);
