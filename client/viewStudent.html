@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>View Students</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Student List</h2>
+
+    <table class="table table-striped table-bordered">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">Class</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Edit Or Delete</th>
+        </tr>
+      </thead>
+      <tbody id="studentTableBody">
+        
+      </tbody>
+    </table>
+    <button onclick="location.href='createStudent.html'" class="btn btn-primary">Add Student</button>
+    <button onclick="location.href='home.html'" class="btn btn-primary">Home Page</button>
+  </div>
+  <script src="../client/js/view.js">
+  </script>
+  </body>
+</html>
