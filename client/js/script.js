@@ -63,9 +63,9 @@ studentForm.addEventListener('submit', function(event) {
     .then(res => res.json())
     .then(data => {
       console.log("Student Information :", data);
-      alert("Student added successfully");
       studentForm.reset();
-      window.location.href = 'viewStudent.html';
+      alert("Student added successfully");
+      
     })
     .catch(err => {
       console.error("Error creating student:", err);
